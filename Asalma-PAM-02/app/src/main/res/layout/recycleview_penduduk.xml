@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradien"
+    android:layout_marginTop="5dp"
+    android:id="@+id/penduduk_list">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:contentDescription="header"
+        android:background="@drawable/header"/>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/pProfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"/>
+     <TextView
+         android:layout_marginStart="10dp"
+         android:layout_centerVertical="true"
+         android:textColor="@color/design_default_color_on_secondary"
+         android:id="@+id/txt_profil"
+         android:layout_toRightOf="@id/pProfil"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Nama"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/silver"/>
+
+</LinearLayout>
